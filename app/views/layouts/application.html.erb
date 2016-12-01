@@ -12,8 +12,10 @@
     <div id="title">
   	  <h1>Up Your Alley</h1>
   	</div>
+  		 <%=  render "shared/nav" %>
   		<p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
     <%= yield %>
+    		<%= render "shared/footer" %>
   </body>
 </html>

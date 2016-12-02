@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
 input[type=text] {
     width: 400px;
     box-sizing: border-box;
@@ -17,6 +23,17 @@ input[type=text] {
 #title {
   	color: red;
   }
+  #sign_in a  {
+  line-height: 40px;
+  color: #fff;
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+}
+#sign_in {
+  float: right;
+  margin: 0 5% 0 0;
+}
+
 
 .footer {
   background: #EDEFF1;

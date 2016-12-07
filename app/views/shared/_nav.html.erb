@@ -6,25 +6,25 @@
            
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button> <a class="navbar-brand" href="#">Home</a>
+          </button> <a class="navbar-brand" <%= link_to "Home", root_path %>
         </div>
         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#">Link</a>
+              <%= link_to "Shop", products_path %>
             </li>
             <li>
-              <a href="#">Link</a>
+            
             </li>
             <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<strong class="caret"></strong></a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="#">Page_1</a>
+                  <%= link_to "Page_1", page_1_path %>
                 </li>
                 <li>
-                  <a href="#">Page_2</a>
+                  <%= link_to "Page_2", page_2_path %>
                 </li>
                 
               </ul>
@@ -41,8 +41,9 @@
           <div id= "sign_in">
       <% if user_signed_in? %>
         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-      <% else %>  
+      <% else %> 
         <%= link_to "Sign In", new_user_session_path %>
+        
         <%= link_to "Sign Up", new_user_registration_path %>
     <% end %>
     </div>

@@ -51,4 +51,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.2'
 gem 'stripe', '~> 1.57', '>= 1.57.1'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'solidus'
+gem 'solidus_auth_devise'
+
 
